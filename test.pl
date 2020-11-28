@@ -28,3 +28,17 @@ uslovie3(Stud1, Stud2):-
 	not(Stud1 = mathematics)'
 	Stud2 = chemistry.
 uslovie3(mathematics,_).
+
+%Процедура для решения 
+proc (Stud1, Stud2, Stud3):- 
+	fac(Stud1),
+	fac(Stud2),
+	fac(Stud3),
+uslovie1(Stud1, Stud3),
+uslovie2(Stud2, Stud1),
+uslovie3(Stud3, Stud2).
+
+main:-
+	proc(Petr,Roma,Serega),
+	write("Рома - "),
+	write(Roma)!.
