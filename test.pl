@@ -41,4 +41,4 @@ uslovie3(Stud3, Stud2).
 main:-
 	proc(Petr,Roma,Serega),
 	write("Рома - "),
-	write(Roma)!.
+	write(Roma), !.
