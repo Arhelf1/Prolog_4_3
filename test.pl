@@ -20,7 +20,8 @@ uslovie1(Stud1,_):-
 uslovie2(Stud1, Stud2):- 
 	not(Stud1 = physics),
 	Stud2 = mathematics.
-uslovie(phisics,_).
+uslovie2(phisics,_).
+%Не знаю почему оно работало но в строке выше была опечатка :D 
 
 % серега не математик -> рома химик
 
