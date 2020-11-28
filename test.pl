@@ -4,4 +4,27 @@
 fac(physics).
 fac(mathematics).
 fac(chemistry).
-%Круто, гит заработал, ток хз как :D :)
+%Продолжаем писать код
+
+%Петя математик -> Серега не физик 
+
+uslovie1(Stud1, Stud2):- 
+	Stud1 = mathematics,
+	not(Stud2 = physics).
+%иначе
+uslovie1(Stud1,_):-
+	not(Stud1 = mathematics).
+
+%Рома не физик -> Петя математик
+
+uslovie2(Stud1, Stud2):- 
+	not(Stud1 = physics),
+	Stud2 = mathematics.
+uslovie(phisics,_).
+
+% серега не математик -> рома химик
+
+uslovie3(Stud1, Stud2):-
+	not(Stud1 = mathematics)'
+	Stud2 = chemistry.
+uslovie3(mathematics,_).
