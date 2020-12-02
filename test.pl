@@ -27,7 +27,7 @@ uslovie3(Stud1, Stud2) :-
 uslovie3(mathematics, _).
 
 %Процедура для решения 
-solve(Stud1, Stud2, Stud3) :-  
+proc(Stud1, Stud2, Stud3) :-  
   fac(Stud1),
   fac(Stud2),
   fac(Stud3), 
@@ -36,7 +36,7 @@ solve(Stud1, Stud2, Stud3) :-
   uslovie3(Stud3, Stud2).
 
 main :-
-  solve(Petr, Roma, Serega),
+  proc(Petr, Roma, Serega),
   write("Roma - "),
   write(Roma), 
   !.
