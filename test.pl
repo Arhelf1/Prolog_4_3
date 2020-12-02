@@ -37,7 +37,7 @@ solve(Stud1, Stud2, Stud3) :-
 
 main :-
   solve(Petr, Roma, Serega),
-  write("Roman is "),
+  write("Roma - "),
   write(Roma), 
   !.
 %-------------------------
